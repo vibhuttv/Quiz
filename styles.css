@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #EBF5FE;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.hud-item {
+    text-align: center;
+}
+
+.hud-prefix {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #56A5EA;
+}
+
+.btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 55px;
+    font-size: 0.9em;
+    color: #56A5EA;
+    background-color: #FFFFFF;
+    border: none;
+    border-style: solid;
+    border-width: thin;
+    border-color: #56A5EA;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+
+.option {
+    display: block;
+    padding: 10px;
+    /* width: max-content; */
+    background: #fff;
+    /* color: #56A5EA; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.option:hover {
+    transform: scale(1.06);
+}
+
+.correct {
+    background-color: #4bdb6c; 
+    color: #fff;
+    transform: scale(1.05);
+}
+.incorrect {
+    background-color: #e43042;    
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hud-questionNumber {
+    text-align: center;
+}
+
+
+#progressBarContainer {
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+    background: rgba(0, 0, 0, 0);
+    /* border-radius: 5px; */
+    border-style: solid;
+    border-color: rgba(0,123,255, 0.7);
+    border-width: 3px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    width: 0;
+    background: rgba(0,123,255, 0.7);;
+    color: #e0e0e0;
+    transition: width 0.3s ease;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    width: 400px;
+}
+
+input {
+    visibility:hidden;
+}
+label {
+    cursor: pointer;
+}
+
+.hud-score {
+    margin: 0px 0 0;
+    
+}
+
+#finalScoreLabel {
+    font-size: 2.3em;
+    /* margin-bottom: ; */
+}
+
+#finalScore {
+    font-size: 2.3em;
+    /* margin-bottom: ; */
+}
